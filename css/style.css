@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, h1, ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.width {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+header{
+    padding: 1rem;
+    width: 100%;
+}
+
+header {
+    font-size: 1.5rem;
+    grid-area: header;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+#mainhome {
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 5px;
+}
+
+#mainabout {
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 5px;
+}
+
+#home {
+    color: black;
+
+}
+
+#mainportfolio {
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 5px;
+}
+
+#portfolio {
+    color: black;
+}
+
+#about {
+    color: black;
+}
+
+#contact {
+    color: black;
+    font-weight: 700;
+    background-color: #e6bd43;
+    padding: 1.5rem;
+    width: 26%;
+}
+
+#contact:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+main {
+    grid-area: main;
+}
+
+#image {
+    display: grid;
+    background-image: url('../img/mountian.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10rem;
+    text-align: center;
+}
+
+#image section p {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.aboutimage {
+    background-image: url('../img/portfolio.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+}
+
+.white-box {
+    display: grid;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3rem;
+    transform: translateX(50%);
+    opacity: 0.8;
+}
+
+.bigtext {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.yellow {
+    background-color: #e6bd43;
+    padding: 10rem;
+    display: grid;
+}
+
+.logoclients {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+    align-content: space-evenly;
+    transform: translateY(50%);
+}
+
+.titleone {
+    font-size: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.contactus {
+    font-size: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.flex-contact {
+    display: flex;
+}
+
+.bigger {
+    margin-top: -3rem;
+    font-size: 20px;
+}
+
+.centeree {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    color: blue;
+}
+
+.fa-phone {
+    color: #252525;
+}
+
+.fa-envelope {
+    color: #252525;
+}
+
+.straighten {
+    display: grid;
+    gap: 20px;
+    margin-left: -2rem;
+    margin-top: -2rem;
+}
+
+.centere {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.fa-location-pin {
+    color: #252525;
+}
+
+.gridd {
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    width: 30%;
+    gap: 20px;
+}
+
+.message {
+    color: black;
+    font-weight: 700;
+    background-color: #e6bd43;
+    padding: 1rem;
+    width: 36%;
+    border: none;
+    font-size: 20px;
+}
+
+.sendmessage {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.logosize {
+    width: 200px;
+}
+
+
+.portimage {
+    position: relative;
+    background-image: url('../img/portfolio.png');
+    background-size: cover;
+    background-position: center;
+    padding: 15rem;
+    margin: 0 auto;
+    text-align: center;;
+    width: 100%;
+}
+
+.portimage::before { 
+    content: ''; /* Her så fikk jeg litt hjelp av gpt til å fikse til en halv gjennomsiktig backgrundsbilde med css. Trengte bare hjelp med content og posisjonen.  */
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.touchwith {
+    background-color: #e6bd43;
+    padding: 1rem;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    width: 30%;
+}
+
+.touchwith:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.fa-square-facebook { 
+    color: white;
+}
+
+.fa-square-instagram {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+
+#services {
+    background-color: #e6bd43;
+    padding: 1rem;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+#services:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.second {
+    display: grid;
+    text-align: center;
+    margin: 10rem;
+    gap: 60px;
+}
+
+.title {
+    font-size: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.left-title {
+    font-size: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.3em;
+    margin-bottom: 5rem;
+}
+
+.jobs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 4rem;
+}
+
+.textexplore {
+    
+    color: black;
+    padding: 10px 10px;
+    border: 1px solid black;
+    font-size: 27px;
+}
+
+.textexplore:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.text {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+
+.yellow-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6bd43;
+    padding: 3rem;
+}
+
+.yellow-flex section {
+    width: 50%;
+    margin-right: 450px;
+    font-size: 19px;
+}
+
+#readmore {
+    color: black;
+    background-color: #e6bd43;
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin-top: 4rem;
+    font-weight: 550;
+}
+
+#readmore:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.flex-branding {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.branding {
+    font-size: 29px;
+    margin: 1.7rem 0rem 1.7rem;
+}
+
+.tesst {
+    width: 480px;
+    min-width: 400px;
+    max-width: 692px;
+    flex-grow: 1;
+}
+
+.animation { 
+    transition: transform 0.3s ease;
+}
+
+.animation:hover {
+    transform: scale(1.05);
+}
+
+.etharum {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.space {
+    margin-left: 2rem;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+.space:hover {
+    transform: scale(1.01);
+}
+
+.bigtest {
+    width: 692px;
+    min-width: 400px;
+    max-width: 692px;
+    flex-grow: 1;
+}
+
+.third {
+    text-align: center;
+    margin: 8rem;
+}
+
+.servicesflex {
+    display: flex;
+    margin-top: 6rem;
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+
+.fa-solid {
+    font-size: 50px;
+}
+
+form {
+    text-align: center;
+    background-color: rgb(216, 215, 215);
+    padding: 6rem;
+}
+
+#searchtitle {
+    display: grid;
+    font-size: 4rem;
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+#email-signup {
+    padding: 1rem;
+    border: none;
+}
+
+#yellowsignup {
+    background-color: #e6bd43;
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#yellowsignup:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525;
+    color: #fff;
+    padding: 4rem 1.5rem 4rem;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 930px) {
+    #grid-container {
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+    }
+
+    header nav, .navigation {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .servicesflex {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .yellow-flex {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .servicesflex section { 
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .yellow-flex section {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
